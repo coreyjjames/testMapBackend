@@ -7,7 +7,7 @@
     "start": "node index.js",
     "start-test": "./node_modules/.bin/istanbul cover --handle-sigint index.js",
     "test": "./node_modules/.bin/_mocha -R spec --timeout 10000 ./test/*.test.js",
-    "coveralls": "ls && cat ./coverage/lcov.info"
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [],
   "author": "",

@@ -9,4 +9,5 @@ script:
   - sleep 10
   - kill $bg_pid
   - sleep 10
+  - ls
   - npm run coveralls
