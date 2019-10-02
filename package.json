@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "node_modules/.bin/mocha --timeout 10000 ./test/*.test.js",
-    "coveralls": "nyc --all npm test && nyc report --reporter=text-lcov | coveralls"
+    "start-test": "./node_modules/.bin/istanbul cover --handle-sigint index.js",
+    "test": "./node_modules/.bin/_mocha -R spec --timeout 10000 ./test/*.test.js",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [],
   "author": "",
