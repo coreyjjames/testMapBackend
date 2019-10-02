@@ -5,5 +5,5 @@ cache:
   directories:
     - node_modules  
 script:
-  - node index.js
+  - node index.js &
   - npm test
