@@ -4,6 +4,7 @@ node_js:
 cache:
   directories:
     - node_modules
-script:
+before_script:
   - node index.js &
+script:
   - npm test
