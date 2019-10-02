@@ -7,9 +7,7 @@ script:
   - sleep 30
   - npm test
   - sleep 10
-  - kill $bg_pid
+  - kill -s SIGTERM $bg_pid
 after_script:
   - sleep 10
-  - ls 
-  - ls ./coverage
-  - cat ./coverage/lcov.info 
+  - npm run coveralls
