@@ -3,5 +3,7 @@ node_js:
   - "lts/*"
 script:
   - npm run start-test &
+  - sleep 30
   - npm test
+  - pkill node
   - npm run coveralls
