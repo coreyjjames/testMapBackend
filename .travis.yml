@@ -8,6 +8,7 @@ script:
   - npm test
   - sleep 10
   - kill $bg_pid
+after_script:
   - sleep 10
   - ls 
   - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
