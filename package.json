@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "cross-env NODE_ENV=test&&npm run actual_test", "actual_test" : "nyc mocha --timeout 10000",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+    "coveralls": "set NODE_ENV=test&&nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [],
   "author": "",
