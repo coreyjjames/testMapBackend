@@ -1,4 +1,4 @@
-var GroupFeed = require('./groupFeed/groupFeed.js');
+var GroupFeed = require('./GroupFeed/groupFeed.js');
 var GroupMarks = require('./groupMarks/groupMarks.js');
 var GroupRoles = require('./groupRoles/groupRoles.js');
 var Groups = require('./groups/groups.js');
