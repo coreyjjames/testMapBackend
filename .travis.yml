@@ -6,6 +6,7 @@ script:
   - bg_pid=$!
   - sleep 30
   - npm test
+  - sleep 10
   - kill $bg_pid
-  - sleep 60
+  - sleep 10
   - npm run coveralls
