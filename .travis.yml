@@ -7,4 +7,5 @@ script:
   - sleep 30
   - npm test
   - kill $bg_pid
+  - sleep 30
   - npm run coveralls
