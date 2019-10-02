@@ -3,6 +3,5 @@ node_js:
   - "lts/*"
 script:
   - node index.js &
-  - NODE_ENV=test
   - npm test
   - npm run coveralls
