@@ -3,7 +3,8 @@ node_js:
   - "lts/*"
 script:
   - npm run start-test &
+  - bg_pid=$!
   - sleep 30
   - npm test
-  - pkill node
+  - kill $bg_pid
   - npm run coveralls
