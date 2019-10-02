@@ -11,4 +11,4 @@ script:
 after_script:
   - sleep 10
   - ls 
-  - cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+  - cat ./coverage/lcov.info 
