@@ -3,8 +3,7 @@ node_js:
   - "lts/*"
 cache:
   directories:
-    - node_modules
-before_script:
-  - node index.js &
+    - node_modules  
 script:
+  - node index.js
   - npm test
