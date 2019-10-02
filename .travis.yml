@@ -7,7 +7,7 @@ script:
   - sleep 30
   - npm test
   - sleep 10
-  - kill -s SIGTERM $bg_pid
+  - pkill -p -s SIGTERM $bg_pid
 after_script:
   - sleep 10
   - ls 
