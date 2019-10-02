@@ -11,4 +11,5 @@ script:
 after_script:
   - sleep 10
   - ls 
+  - ls ./coverage
   - cat ./coverage/lcov.info 
