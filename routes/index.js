@@ -1,11 +1,11 @@
-var GroupFeed = require('./groupFeed/groupFeed');
-var GroupMarks = require('./groupMarks/groupMarks');
-var GroupRoles = require('./groupRoles/groupRoles');
-var Groups = require('./groups/groups');
-var GroupMember = require('./groupMember/groupMember');
-var GroupEvents = require('./groupEvents/groupEvents');
-var Users = require('./users/users');
-var DefaultCategory = require('./defaultCategory/defaultCategory');
+var GroupFeed = require('./groupFeed/groupFeed.js');
+var GroupMarks = require('./groupMarks/groupMarks.js');
+var GroupRoles = require('./groupRoles/groupRoles.js');
+var Groups = require('./groups/groups.js');
+var GroupMember = require('./groupMember/groupMember.js');
+var GroupEvents = require('./groupEvents/groupEvents.js');
+var Users = require('./users/users.js');
+var DefaultCategory = require('./defaultCategory/defaultCategory.js');
 
 
 const express = require("express");
